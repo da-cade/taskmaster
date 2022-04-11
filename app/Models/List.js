@@ -20,7 +20,7 @@ export class List {
     return /*html*/ `
     <div class="col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center g-0 p-2 list-col">
       <div class="d-flex flex-column list-box shadow rounded-top rounded-bottom">
-        <div class="list-header rounded-top p-2" style="outline-color: ${this.color}!important; box-shadow: inset 0px 0px 30px 0px ${this.color};">
+        <div class="list-header rounded-top ps-1" style="outline-color: ${this.color}!important; box-shadow: inset 0px 0px 30px 0px ${this.color};">
           <div class="d-flex align-items-center">
             <h6 class="ms-3 mb-0 my-1">${this.listName}</h6>
             <button class="ms-auto btn btn-delete" onclick="app.listsController.deleteList('${this.id}')"><i

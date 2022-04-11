@@ -7,17 +7,22 @@ body{
   background-image: url("https://media1.thehungryjpeg.com/thumbs2/ori_3645357_bsaryd27ft784u03hciyqwpyixcr7f1p17q30uu6_daisy-flowers-seamless-repeat-pattern-flower-background.jpg");
   background-attachment: fixed;
   background-size: 100%;
-  scroll-behavior: smooth;
 }
 
 i{
-  font-size: 18px;
+  font-size: 22pt;
 }
 
 .btn-delete{
   background-color: rgba(0, 0, 0, 0);
   color:rgba(4, 15, 57, 1);
   border-radius: 50%;
+}
+
+.lil>i{
+  font-size: 18pt;
+  padding-right: .4rem!important;
+  color: #d63cb5c4;
 }
 
 .btn-create{
@@ -71,12 +76,12 @@ label{
 
 h6{
   font-family: 'Lobster';
-  font-size: large;
+  font-size: x-large;
 }
 
 span{
   font-family: 'Dosis', sans-serif;
-  font-size: smaller;
+  font-size: medium;
 }
 
 .header{
@@ -132,7 +137,7 @@ span{
 .floater{
   /* background-color: rgba(4, 15, 57, 1); */
   position: relative;
-  right: 3vw;
+  right: 0vw;
   bottom: 5vh;
   /* min-width: 12vw; */
   /* max-width: 12vw; */

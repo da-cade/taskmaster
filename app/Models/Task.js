@@ -23,7 +23,7 @@ export class Task {
         <input class="form-check-input" type="checkbox" value="" id="${this.id}-${this.completed}" onclick="app.tasksController.changeCompletion('${this.id}')" ${this.completed ? 'checked' : ''}>
         <label class="form-check-label pe-1" for="${this.id}-${this.completed}" ${this.completed === false ? '' : "style='text-decoration: line-through;'"}>${this.taskContent}</label>
       </div>
-      <button class="ms-auto btn btn-delete" onclick="app.tasksController.deleteTask('${this.id}')"><i class="mdi mdi-delete-circle-outline"></i>
+      <button class="ms-auto btn lil p-0 btn-delete" onclick="app.tasksController.deleteTask('${this.id}')"><i class="mdi mdi-delete-circle-outline"></i>
       </button>
     </div>
     `
