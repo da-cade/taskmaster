@@ -1,1 +1,200 @@
 /* BASIC STYLES HERE */
+:root{
+  --cream: rgba(238, 222, 194, 0.744);
+}
+
+body{
+  background-image: url("https://media1.thehungryjpeg.com/thumbs2/ori_3645357_bsaryd27ft784u03hciyqwpyixcr7f1p17q30uu6_daisy-flowers-seamless-repeat-pattern-flower-background.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  scroll-behavior: smooth;
+}
+
+i{
+  font-size: 18px;
+}
+
+.btn-delete{
+  background-color: rgba(0, 0, 0, 0);
+  color:rgba(4, 15, 57, 1);
+  border-radius: 50%;
+}
+
+.btn-create{
+  background-color: #eeecc6;
+  font-family: 'Lobster';
+  border-bottom: #c2be83;
+}
+
+.btn-delete:hover{
+  transform: scale(1.2);
+  transition: color 1s ease-in-out, text-shadow 0.15s ease-in-out;
+  /* background-color: rgb(242, 236, 236); */
+}
+
+.btn-create:hover{
+  transform: scale(1.01);
+  transition: color 1s ease-in-out,  0.15s ease-in-out; 
+  background-color: #f0efdf;
+}
+
+
+input{
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: var(--cream);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-family: 'Dosis', sans-serif;
+  /* box-shadow: 0 1px 1px rgba(255, 255, 255, 0.11); */
+}
+
+.no-outline:focus{
+  outline-style: none;
+  border-style: none;
+}
+
+label{
+  color: black;
+}
+
+@font-face {
+  font-family: 'Neonderthaw', cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Neonderthaw");
+}
+@font-face {
+  font-family: 'Dosis', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Dosis");
+}
+
+h6{
+  font-family: 'Lobster';
+  font-size: large;
+}
+
+span{
+  font-family: 'Dosis', sans-serif;
+  font-size: smaller;
+}
+
+.header{
+  font-family: 'Neonderthaw', cursive;
+  font-weight: 500;
+  font-size: 55px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #00ffff,
+    0 0 82px #00ffff,
+    0 0 92px #00ffff,
+    0 0 102px #00ffff,
+    0 0 151px #00ffff;
+}
+
+.color-replace{
+  border-radius: 50%;
+  background-color: #00ffff;
+  min-width: 10px;
+  min-height: 10px;
+}
+
+.list-col{
+  min-height: fit-content;
+}
+
+.ice-box{
+  min-width: 30vw;
+  outline: var(--cream);
+  outline-style: solid;
+  position: relative;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, .25);  
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.11), 
+              0 2px 2px rgba(255, 255, 255, 0.11), 
+              0 4px 4px rgba(255, 255, 255, 0.11);
+  /* create slight transparency */
+  /* eliminate form solidity */
+}
+
+.ice-box:before {
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.floater{
+  /* background-color: rgba(4, 15, 57, 1); */
+  position: relative;
+  right: 3vw;
+  bottom: 5vh;
+  /* min-width: 12vw; */
+  /* max-width: 12vw; */
+}
+
+.list-box{
+  background: inherit;
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 60vh;
+  background-color: rgba(255, 255, 255, .25);  
+  backdrop-filter: blur(5px);
+  /*
+   background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(240, 248, 255, 0.8); */
+}
+
+.list-box:before {
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .8); */
+  /* filter: blur(10px); */
+}
+
+
+.list-header{
+  color: rgba(4, 15, 57, 1);
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f3fadf;
+  text-align: center;
+  
+              /* inset 0px 0px 12px #00ffff,
+              inset 0px 0px 8px #00ffff; */
+  /* filter: 
+    drop-shadow(inset 0 0 7px #fff),
+    drop-shadow(inset 0 0 10px #fff),
+    drop-shadow(inset 0 0 21px #fff),
+    drop-shadow(inset 0 0 42px #00ffff),
+    drop-shadow(inset 0 0 82px #00ffff),
+    drop-shadow(inset 0 0 92px #00ffff),
+    drop-shadow(inset 0 0 102px #00ffff),
+    drop-shadow(inset 0 0 151px #00ffff); */
+}
+
+.delete-list{  
+  color: white;
+}
+
+.list-body{
+  max-height: 100%;
+}
+
+.task-row{
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label{
+  font-size: small;
+}
